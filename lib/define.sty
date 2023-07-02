@@ -1,7 +1,21 @@
+% define marings
 \usepackage{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
+\geometry{top=1cm, right=2cm, bottom=2.5cm, left=2cm, foot=1.725cm, head=1cm, headsep=1cm, includeheadfoot}
 
-% define margins
-\geometry{top=1cm, right=2cm, bottom=2.5cm, left=2cm, foot=1.725cm, head=2cm, headsep=1.3cm}
+% font
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.92]{nunito}
+\renewcommand\familydefault{\sfdefault} 
+
+% header and footer
+\usepackage[automark]{scrlayer-scrpage}
+\clearpairofpagestyles
+\deftripstyle{plain}{tl}{tm}{tr}{bl}{bm}{br}
+\deftripstyle{scrheadings}{tl}{tm}{tr}{bl}{bm}{br}
+\renewcommand*{\chapterpagestyle}{plain}
+
+% misc
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage[style=swiss]{csquotes}
